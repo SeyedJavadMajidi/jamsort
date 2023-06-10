@@ -1,5 +1,6 @@
 <?php
 	interface jamsortinterface{
-		public function jsort($array):array;
+		public function jsortAZ($array):array;
+		public function jsortZA($array):array;
 	}
 ?>

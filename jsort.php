@@ -5,8 +5,11 @@ class jsort{
 		$this->jsort = $s;
 	}
 	
-	public function jsort($array){
-		return $this->jsort->jsort($array);
+	public function jsortAZ($array){
+		return $this->jsort->jsortAZ($array);
+	}
+	public function jsortZA($array){
+		return $this->jsort->jsortZA($array);
 	}
 }
 ?>

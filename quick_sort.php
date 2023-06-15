@@ -1,23 +1,23 @@
 <?php
 require_once "jamsortinterface.php";
 
-class quick_sort implements jamsortinterface
+class QuickSort implements JamSortInterface
 {
     private $type = 1;
 
-    public function jsortAZ($arr): array
-    {
-        $this->type = 1;
-        return $this->qsort($arr);
-    }
-
-    public function jsortZA($arr): array
+    public function jsortZA(array $array): array
     {
         $this->type = 2;
-        return $this->qsort($arr);
+        return $this->qSort($array);
     }
 
-    private function qsort($arr)
+    public function jSortAZ(array $array): array
+    {
+        $this->type = 1;
+        return $this->qSort($array);
+    }
+
+    private function qSort($arr):array
     {
         if (count($arr) < 2)
             return $arr;

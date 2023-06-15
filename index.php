@@ -1,7 +1,7 @@
 <?php
 require_once "jsort.php";
-require_once "quick_sort.php";
-$x = [12,34,12,2,43,65,21,3,2,5,1,4,3];
+require_once "HeapSort.php";
+$x = [1,2,3,4,5,6,7,8,9,10,1032,9,8,7,6,5,4,3,2,1,45,153];
 
-$j = new jsort(new quick_sort());
-echo implode("<br>",$j->jsortAZ($x));
+$j = new JSort(new HeapSort());
+echo implode("<br>",$j->jSortAZ($x));

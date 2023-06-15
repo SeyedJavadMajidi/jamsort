@@ -1,23 +1,23 @@
 <?php
 require_once "jamsortinterface.php";
 
-class merge_sort implements jamsortinterface
+class MergeSort implements jamsortinterface
 {
     private $type = 1;
 
-    public function jsortAZ($arr): array
+    public function jSortAZ(array $array): array
     {
         $this->type = 1;
-        return $this->split($arr);
+        return $this->split($array);
     }
 
-    public function jsortZA($arr): array
+    public function jSortZA(array $array): array
     {
         $this->type = 2;
-        return $this->split($arr);
+        return $this->split($array);
     }
 
-    private function split($arr)
+    private function split($arr):array
     {
         if (count($arr) == 1)
             return $arr;
@@ -26,10 +26,10 @@ class merge_sort implements jamsortinterface
         $right = array_slice($arr, $mid);
         $left = $this->split($left);
         $right = $this->split($right);
-        return $this->merg($left, $right);
+        return $this->merge($left, $right);
     }
 
-    private function merg($left, $right)
+    private function merge($left, $right):array
     {
         $res = array();
         while (count($left) > 0 && count($right) > 0) {

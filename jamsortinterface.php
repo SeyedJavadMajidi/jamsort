@@ -1,6 +1,6 @@
 <?php
-	interface jamsortinterface{
-		public function jsortAZ($array):array;
-		public function jsortZA($array):array;
+	interface JamSortInterface{
+		public function jSortAZ(array $array):array;
+		public function jSortZA(array $array):array;
 	}
 ?>

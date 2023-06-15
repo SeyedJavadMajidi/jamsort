@@ -17,6 +17,7 @@ print_r($j->jsort($x));
 
 1.  Quick Sort
 2.  Merge Sort
+3. Heap Sort
 
 لطفا کدها رو بررسی کنید و به من در توسعه این کلاس کمک کنید.
 
@@ -27,3 +28,4 @@ print_r($j->jsort($x));
 طراح و برنامه نویس سایت و اندروید
 
 [لطفا از سایت من دیدن کنید](https://softjam.ir)
+[quick_sort.php](quick_sort.php)

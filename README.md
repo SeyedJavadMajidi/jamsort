@@ -28,4 +28,3 @@ print_r($j->jsort($x));
 طراح و برنامه نویس سایت و اندروید
 
 [لطفا از سایت من دیدن کنید](https://softjam.ir)
-[quick_sort.php](quick_sort.php)

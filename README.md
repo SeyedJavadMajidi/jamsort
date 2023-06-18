@@ -1,4 +1,4 @@
-Hello every one 😊
+Hello every one 😊<br/>
 In this project, I've implemented the design pattern of strategy so you can sort the arrays in different ways 😎
 You can use it as follows:
 

@@ -1,5 +1,7 @@
 <?php
-require_once "jamsortinterface.php";
+
+namespace App\QuickSort;
+use App\MyInterFace\JamSortInterface;
 
 class QuickSort implements JamSortInterface
 {
@@ -17,7 +19,7 @@ class QuickSort implements JamSortInterface
         return $this->qSort($array);
     }
 
-    private function qSort($arr):array
+    private function qSort($arr): array
     {
         if (count($arr) < 2)
             return $arr;

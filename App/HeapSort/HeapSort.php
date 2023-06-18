@@ -1,5 +1,7 @@
 <?php
-require_once "jamsortinterface.php";
+
+namespace App\HeapSort;
+use App\MyInterFace\JamSortInterface;
 
 class HeapSort implements JamSortInterface
 {

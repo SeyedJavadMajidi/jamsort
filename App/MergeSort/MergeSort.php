@@ -1,7 +1,9 @@
 <?php
-require_once "jamsortinterface.php";
 
-class MergeSort implements jamsortinterface
+namespace App\MergeSort;
+use App\MyInterFace\jamsortinterface;
+
+class MergeSort implements JamSortInterface
 {
     private $type = 1;
 
@@ -17,7 +19,7 @@ class MergeSort implements jamsortinterface
         return $this->split($array);
     }
 
-    private function split($arr):array
+    private function split($arr): array
     {
         if (count($arr) == 1)
             return $arr;
@@ -29,7 +31,7 @@ class MergeSort implements jamsortinterface
         return $this->merge($left, $right);
     }
 
-    private function merge($left, $right):array
+    private function merge($left, $right): array
     {
         $res = array();
         while (count($left) > 0 && count($right) > 0) {

@@ -1,30 +1,26 @@
-به نام خدا  
-سلام خدمت شما 😊  
-در این پروژه من تلاش کردم که پروژه بر اساس دیزاین پترن **strategy** بالا بیارم که در اون بشه به انواع مختلف آرایه رو مرتب کرد 😎
-
-نحوه استفاده بصورت زیر هست:
+Hello every one 😊
+In this project, I've implemented the design pattern of strategy so you can sort the arrays in different ways 😎
+You can use it as follows:
 
 ```php
-require_once "jsort.php";
-require_once "quick_sort.php";
+use App\JSort\JSort;require_once "JSort.php";
+require_once "QuickSort.php";
 $x = [12,34,12,2,43,65,21,3,2,5,1,4,3];
 
 $j = new jsort(new quick_sort());
 print_r($j->jsort($x));
 ```
 
-**در حال حاضر الگوریتم زیر پشتیبانی میشود:**
+**At this momet following algorithms are supported:**
 
 1.  Quick Sort
 2.  Merge Sort
 3. Heap Sort
 
-لطفا کدها رو بررسی کنید و به من در توسعه این کلاس کمک کنید.
+Please have a look at this code and help me to develope this class.
+Thanks😍
+Seyed Javad Majidi
+Website full stack developer
+Please visit my website
 
-ممنونم 😍
-
-سید جواد مجیدی
-
-طراح و برنامه نویس سایت و اندروید
-
-[لطفا از سایت من دیدن کنید](https://softjam.ir)
+[Please visit my website](https://softjam.ir)

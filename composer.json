@@ -1,0 +1,14 @@
+{
+  "authors": [
+    {
+      "name": "Seyed Javad Majidi",
+      "email": "javad.majidi.1369@gmail.com"
+    }
+  ],
+  "autoload": {
+
+    "psr-4": {"App\\": "App/"}
+
+  }
+
+}

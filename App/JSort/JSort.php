@@ -1,5 +1,9 @@
 <?php
 
+namespace App\JSort;
+
+use App\MyInterFace\JamSortInterface;
+
 class JSort
 {
     private JamSortInterface $jsort;

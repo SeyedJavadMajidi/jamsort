@@ -18,9 +18,8 @@ print_r($j->jsort($x));
 3. Heap Sort
 
 Please have a look at this code and help me to develope this class.
-Thanks😍
-Seyed Javad Majidi
+Thanks😍<br>
+Seyed Javad Majidi<br>
 Website full stack developer
-Please visit my website
 
 [Please visit my website](https://softjam.ir)

@@ -3,12 +3,15 @@ In this project, I've implemented the design pattern of strategy so you can sort
 You can use it as follows:
 
 ```php
-use App\JSort\JSort;require_once "JSort.php";
-require_once "QuickSort.php";
-$x = [12,34,12,2,43,65,21,3,2,5,1,4,3];
+require_once "vendor\autoload.php";
 
-$j = new jsort(new quick_sort());
-print_r($j->jsort($x));
+use App\HeapSort\HeapSort;
+use App\JSort\JSort;
+
+$x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1032, 9, 8, 7, 6, 5, 4, 3, 2, 1, 45, 153];
+
+$j = new JSort(new HeapSort());
+echo implode("<br>", $j->jSortAZ($x));
 ```
 
 **At this momet following algorithms are supported:**

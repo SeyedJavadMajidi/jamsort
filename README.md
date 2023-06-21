@@ -18,6 +18,7 @@ echo implode("<br>", $j->jSortAZ($x));
 1.  Quick Sort
 2.  Merge Sort
 3. Heap Sort
+4. Selection Sort
 
 Please have a look at this code and help me to develope this class.
 Thanks😍<br>

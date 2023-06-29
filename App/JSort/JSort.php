@@ -6,11 +6,15 @@ use App\MyInterFace\JamSortInterface;
 
 class JSort
 {
+    public const HeapSort = "App\HeapSort\HeapSort";
+    public const MergeSort = "App\MergeSort\MergeSort";
+    public const QuickSort = "App\QuickSort\QuickSort";
+    public const SelectionSort = "App\SelectionSort\SelectionSort";
     private JamSortInterface $jsort;
 
-    public function __construct(JamSortInterface $s)
+    public function __construct(string $s)
     {
-        $this->jsort = $s;
+        $this->jsort = new $s;
     }
 
     public function jSortAZ(array $array): array
